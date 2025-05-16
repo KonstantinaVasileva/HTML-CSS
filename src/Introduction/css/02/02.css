@@ -1,0 +1,30 @@
+div {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    font-family: Arial;
+}
+
+div p {
+    color: darkblue;
+}
+
+ul > li {
+    list-style-type: circle;
+}
+
+p + p {
+    background-color: wheat;
+}
+
+p ~ span {
+    font-weight: bold;
+}
+
+span {
+    color: red;
+}
+
+ul {
+    padding-left: 20px;
+}
