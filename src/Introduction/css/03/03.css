@@ -1,0 +1,23 @@
+p.normal {
+    color: gold;
+}
+
+p.highlight {
+    color: darkblue;
+}
+
+div#special-div {
+    background-color: chartreuse;
+    padding: 20px;
+}
+
+[href^="https"]{
+    color: olive;
+    border-bottom: 1.5px solid olive;
+    padding: 1px;
+}
+
+.class1.class2.class3{
+    font-style: oblique;
+    font-weight: bold;
+}
