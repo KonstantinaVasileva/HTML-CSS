@@ -1,0 +1,31 @@
+h1, h2, p {
+    font-family: Georgia, serif;
+    color: red;
+    margin: 10px;
+}
+
+header, section, footer {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+}
+
+ul{
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #9f9fef;
+    background-color: #0c0c42;
+}
