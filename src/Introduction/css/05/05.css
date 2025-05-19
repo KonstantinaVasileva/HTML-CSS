@@ -1,0 +1,29 @@
+section p {
+    background-color: coral;
+}
+
+ul > li:first-child {
+    font-weight: bolder;
+}
+
+article + article {
+    color: lime;
+}
+
+h2 ~ p {
+    color: blue;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul li ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: red;
+}
+
+ul li ul li:first-child a{
+    color: slateblue;
+}
