@@ -1,0 +1,22 @@
+html{
+    padding: 0;
+    margin: 0;
+    border: 2px solid dodgerblue;
+}
+
+div{
+    border: 2px solid black;
+    margin-bottom: 1em;
+}
+
+.uniform{
+    padding: 20px;
+}
+
+.non-uniform{
+    padding: 10px 30px 20px 40px;
+}
+
+.percentage{
+    padding: 5%;
+}
