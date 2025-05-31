@@ -1,0 +1,32 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 3px solid black;
+    padding: 1em;
+}
+
+section {
+    padding: 1em 2em;
+    margin-bottom: 2em;
+    border: 2px solid black;
+}
+
+p {
+    border: 1px solid #ccc;
+    padding: 1em;
+}
+
+.block p {
+    display: block;
+}
+
+.inline p {
+    display: inline;
+}
+
+.inline-block p {
+    display: inline-block;
+}
