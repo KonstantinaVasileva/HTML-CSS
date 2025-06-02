@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+h2 {
+    padding: 20px 0;
+    margin-left: 10px;
+}
+
+div {
+    padding: 5px;
+}
+
+div > div {
+    max-width: 70ch;
+    border: 2px solid black;
+    max-height: 50px;
+}
+
+.visible div {
+    overflow: visible;
+}
+
+.hidden div {
+    overflow: hidden;
+}
+
+.scroll div {
+    overflow: scroll;
+}
