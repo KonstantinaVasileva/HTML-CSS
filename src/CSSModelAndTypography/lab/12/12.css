@@ -1,0 +1,62 @@
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    font-family: inherit;
+}
+
+p, ol, ul {
+    padding-bottom: 1.5rem;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+ul li li {
+    list-style-type: disc;
+}
+
+ul li li li {
+    list-style-type: circle;
+}
+
+table, td, th {
+    border: 1px solid #cccccc;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+}
+
+th {
+    background: rgb(175, 173, 173);
+    text-align: left;
+}
+
+blockquote {
+    border-left: 4px solid #e3e0e0;
+    margin: 0 0 1.5rem 2rem;
+    padding: 1rem 2rem;
+    position: relative;
+    font-style: italic;
+}
+
+tr:nth-of-type(2n) {
+    background: rgb(245, 245, 245);
+}
+
+li:last-of-type {
+    margin-bottom: .1em;
+}
+
+blockquote > p {
+    margin-bottom: 1em;
+}
+
+.author {
+    text-align: right;
+    padding-bottom: 1em;
+}
