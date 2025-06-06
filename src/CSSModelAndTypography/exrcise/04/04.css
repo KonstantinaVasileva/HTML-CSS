@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+}
+
+body {
+    background-color: #e1dcdc;
+    padding-bottom: 10em;
+    padding-top: 2em;
+}
+
+article {
+    width: 24em;
+    display: block;
+    border: 1px solid #e1dcdc;
+    border-radius: .3em;
+    box-shadow: 0 0 2px 0 rgb(0, 0, 0, 0.1);
+    background-color: white;
+    overflow: hidden;
+    margin: 0 auto;
+    color: #333333;
+}
+
+img {
+    width: 100%;
+}
+
+h3, article > p, footer {
+    margin: 2em;
+}
+
+footer p:first-child {
+    font-weight: bold;
+}
+
+footer p:last-child {
+    white-space: nowrap;
+    font-style: italic;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
