@@ -1,0 +1,28 @@
+html {
+    font-family: Lato, sans-serif;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    color: #333333;
+}
+
+body{
+    padding-block: 2em;
+}
+
+time{
+    font-weight: bold;
+}
+
+.post {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #666666;
+    border-radius: .4em;
+    padding-inline: 2em;
+}
+
+section p:first-child{
+    font-size: 1.2em;
+}
