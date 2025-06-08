@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+}
+
+body {
+    margin: 1em;
+}
+
+p {
+    padding: 1em;
+}
+
+summary {
+    font-weight: bold;
+    padding: 1em;
+}
+
+.accordion {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #cccccc;
+}
+
+details:not(:last-child) summary {
+    border-bottom: 1px solid #cccccc;
+}
+
+details[open] summary {
+    border-bottom: none;
+    /*border-bottom: 1px solid #cccccc;*/
+}
+
+details:not(:last-child)[open] {
+    border-bottom: 1px solid #cccccc;
+}
