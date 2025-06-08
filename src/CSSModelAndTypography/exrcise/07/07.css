@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Lato, sans-serif;
+}
+
+body{
+    padding: 1em 2em;
+}
+
+h1{
+    font-size: 2.6em;
+}
+
+ul {
+    list-style-type: none;
+    align-items: baseline;
+}
+
+li {
+    display: inline-block;
+    padding: 2em;
+    color: black;
+    background-color: #ebebeb;
+    border-radius: 50px;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+i{
+    color: black;
+}
