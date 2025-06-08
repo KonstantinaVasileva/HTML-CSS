@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Lato, sans-serif;
+}
+
+body {
+    padding: 2em;
+}
+
+h3 {
+    padding-block: 1em;
+}
+
+li {
+    display: inline-block;
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    padding: 1em;
+    margin-right: .5em;
+    font-size: .7em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+li:first-child {
+    background-color: #d8d8d8;
+}
+
+li:nth-child(2) {
+    background: #ff9b00;
+}
+
+li:nth-child(3) {
+    background: #f9f9cc;
+}
+
+li:last-child {
+    background: #d8d8d8;
+}
