@@ -41,12 +41,12 @@ header p {
 
 main {
     display: flex;
-    gap: 3em;
+    gap: 4em;
     padding: 3em;
 }
 
-article {
-    flex-grow: 1;
+main article {
+    flex-basis: calc( (100% - 2 * 4em ) / 3 );
 }
 
 article p {
