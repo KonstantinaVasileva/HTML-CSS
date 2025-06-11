@@ -12,16 +12,17 @@ body {
 
 section {
     background: white;
-    width: 1100px;
-    height: 410px;
+    max-width: 1100px;
     margin: 0 auto;
     border: 1px solid #eeeeee;
     border-radius: 3px;
     box-shadow: 1px 1px 4px 2px #bbb;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 header, footer {
-    width: 55ch;
+    max-width: 55ch;
     margin: 1em auto;
     text-align: center;
 }
@@ -35,13 +36,13 @@ header p {
     font-size: 1rem;
     line-height: 1.5;
     margin: 1em 1em 2em;
-    opacity: 65%;
+    opacity: 0.65;
 }
 
 main {
     display: flex;
     gap: 3em;
-    margin: 3em;
+    padding: 3em;
 }
 
 article {
@@ -50,7 +51,7 @@ article {
 
 article p {
     font-size: 0.9rem;
-    width: 38ch;
+    max-width: 38ch;
 }
 
 h4 {
@@ -60,12 +61,12 @@ h4 {
 footer {
     font-size: 0.7rem;
     line-height: 1.5;
-    width: 90ch;
+    max-width: 90ch;
 }
 
 footer p {
     margin-top: 1.5em;
-    opacity: 65%;
+    opacity: 0.65;
 }
 
 header::after,
