@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+h2 {
+    padding-block: .5em;
+}
+
+p {
+    padding-bottom: 1.5em;
+}
+
+pre {
+    background-color: #eeeeee;
+    padding: .5em;
+    border-radius: .3em;
+}
+
+body::before {
+    background: #369;
+    border-radius: .3em;
+    padding: 1em 1.5em;
+    margin-bottom: 2em;
+}
+
+@media (hover: none) {
+    body::before {
+        display: block;
+        content: 'The device does NOT support hover';
+    }
+}
+
+@media (hover: hover) {
+    body::before {
+        display: block;
+        content: 'The device does support hover';
+    }
+}
