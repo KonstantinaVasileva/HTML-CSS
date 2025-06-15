@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eeeeee;
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    background: white;
+    border-radius: .3em;
+    box-shadow: 0 0 2em 0 rgb(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 4em 5em;
+    gap: 1em;
+    padding: 2em;
+}
+
+.container * {
+    border: 1px solid #bfbfbf;
+    border-radius: .2em;
+    padding: 2em;
+
+}
+
+header, footer {
+    flex: 1 1 100%;
+}
+
+main {
+    flex-grow: 7;
+}
+
+aside {
+    flex-grow: 3;
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+}
