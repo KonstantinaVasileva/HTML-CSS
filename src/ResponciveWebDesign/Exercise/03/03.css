@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.4em
+}
+
+h2 {
+    font-size: 2em
+}
+
+h3 {
+    font-size: 1.6em
+}
+
+h4 {
+    font-size: 1.4em
+}
+
+h5 {
+    font-size: 1.2em
+}
+
+h6 {
+    font-size: 1em
+}
+
+body {
+    background: #DDDDDD;
+    font: 12px/1.5 Lato, sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1100px;
+    background: white;
+    padding: 2em;
+    margin: 2em auto;
+    border-radius: .3em;
+    box-shadow: 0 0 2em 0 rgb(0, 0, 0, 0.2);
+}
+
+header > * {
+    padding-bottom: .5em;
+}
+
+hr {
+    opacity: 50;
+    margin-block: 1em;
+}
+
+p {
+    padding-block: 1em;
+}
+
+table {
+    background: #cccccc;
+    width: 100%;
+}
+
+tr:nth-child(2n+1) {
+    background: #ffffff;
+}
+
+tr:nth-child(2n) {
+    background: #f1f1f1;
+}
+
+blockquote {
+    border-left: 2px solid #DDDDDD;
+    font-style: italic;
+    position: relative;
+    padding: 1em;
+    margin-left: 1em;
+}
+
+cite {
+    display: block;
+    text-align: right;
+
+}
+
+footer {
+    padding-block: 1em;
+}
+
+@media (min-width: 1200px) {
+    * {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 800px) {
+    * {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 600px) {
+    * {
+        font-size: 14px;
+    }
+}
