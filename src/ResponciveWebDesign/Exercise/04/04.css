@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font: 14px/1.5 "Lucida Sans Unicode";
+}
+
+body {
+    background: #eeeeee;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-radius: .5em;
+    box-shadow: 0 0 9px 0 rgb(0, 0, 0, 0.2);
+    margin: 0 auto;
+    border-collapse: collapse;
+
+    tr {
+        &:not(:first-child) {
+            border-top: 1px solid #d5d5d5;
+        }
+
+        * {
+            padding: 1rem;
+        }
+
+        .title {
+            font-size: 1.5rem;
+        }
+
+        th {
+            font-weight: bold;
+            text-align: left;
+        }
+
+        th:not(.title) {
+            background: #eeeeee;
+        }
+    }
+}
+
+@media (width < 600px) {
+
+    tbody {
+        display: block;
+        border-collapse: collapse;
+
+        tr {
+            display: block;
+
+            &:not(:first-child) {
+                border-top: 2px solid black;
+            }
+
+            th:not(.title) {
+                display: none;
+            }
+
+            td {
+                border-top: 1px solid #d5d5d5;
+                color: #666666;
+                display: flex;
+
+
+                &:before {
+                    content: attr(data-title);
+                    display: block;
+                    flex-wrap: nowrap;
+                    font-weight: bold;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color: black;
+                    flex: 0 1 35%;
+                }
+            }
+        }
+    }
+}
