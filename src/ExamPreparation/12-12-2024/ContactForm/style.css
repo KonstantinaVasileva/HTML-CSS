@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #575757;
+}
+
+body {
+    width: 1200px;
+    height: 100vh;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: "source sans 3", serif;
+
+    .container {
+        width: 70%;
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            gap: 3em;
+
+            h2, button {
+                text-transform: uppercase;
+            }
+
+            .form {
+                display: flex;
+                flex-direction: column;
+
+                form {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 1em;
+
+                    .name, .email {
+                        flex-grow: 1;
+                        flex-basis: 45%;
+                    }
+
+                    .message {
+                        flex-basis: 100%;
+                        width: 100%;
+                    }
+
+                    input,textarea {
+                        display: inline-block;
+                        border: none;
+                        border-bottom: 1px solid black;
+                        background-color: inherit;
+                        width: 100%;
+                    }
+
+                    button {
+                        background-color: #585858;
+                        color: white;
+                        font-weight: bold;
+                        padding: 1em 1.5em;
+                        border-radius: .3em;
+                        border: none;
+                    }
+                }
+            }
+        }
+
+        .aside {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-basis: 35%;
+
+            h2 {
+                flex-grow: 1;
+                flex-basis: 100%;
+            }
+
+            i {
+                border: 1px solid #cfcfcf;
+                border-radius: .3em;
+                padding: .5em .8em;
+                margin: .3em;
+                height: 17%;
+            }
+        }
+
+        footer {
+            display: flex;
+            flex-direction: row;
+            align-self: flex-start;
+            gap: 2em;
+            padding-top: 1em;
+            opacity: 70%;
+        }
+    }
+}
+
