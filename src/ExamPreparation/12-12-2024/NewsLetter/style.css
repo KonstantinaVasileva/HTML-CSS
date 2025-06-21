@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #c1bbbb;
+    font: 14px/1.5 'Open Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3em;
+    gap: 2em;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    position: relative;
+
+    h2 {
+        font: 30px 'Oleo script', serif;
+        background-color: #57a390;
+        padding-inline: .3em;
+        border-radius: .3em;
+        color: white;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 10px;
+        opacity: 50%;
+
+        nav {
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 2em;
+
+                li {
+                    display: block;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                    a:hover {
+                        color: white;
+                        background-color: #444444;
+                        padding: .5em .8em;
+                        border-radius: .3em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    .header {
+        background-color: white;
+        border-radius: .3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4em;
+
+        .title {
+
+            flex-basis: 55%;
+
+            h1 {
+                font-size: 40px;
+                opacity: 70%;
+                font-weight: bolder;
+                line-height: 1;
+            }
+
+            p {
+                font-size: 30px;
+                font-weight: 200;
+                padding-top: 1em;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            flex-basis: 35%;
+
+            button {
+                font-weight: 800;
+                padding: 1em;
+                border: none;
+                border-radius: .3em;
+                font-size: 20px;
+                display: flex;
+                justify-content: space-between;
+
+                &[name=go] {
+                    background-color: #0090c5;
+                    color: white;
+
+                    i {
+                        background-color: white;
+                        color: #0090c5;
+                        padding: .3em;
+                        border-radius: 50px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
+                &[name=info] {
+                    background-color: #f2f2f2;
+                    color: black;
+                    opacity: 70%;
+
+                    span {
+                        width: 30px;
+                        height: 30px;
+                        background-color: black;
+                        color: white;
+                        font-size: 13px;
+                        padding: .5em;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        width: inherit;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+
+        div {
+            width: calc((900px - 8em) / 3);
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: .3em;
+            overflow: hidden;
+
+            .desc {
+                padding: 2em;
+            }
+
+            h3 {
+                padding-top: 1em;
+            }
+
+            & > p {
+                padding-bottom: 2em;
+            }
+
+            p {
+                font-size: 10px;
+                line-height: 2;
+                opacity: 50%;
+            }
+
+            p + p {
+                padding-block: 1em;
+            }
+        }
+    }
+
+    .info {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        padding: 2em;
+        gap: 2em;
+
+        .stuff {
+            display: flex;
+            flex-direction: row;
+            flex-basis: calc((900px - 8em) / 3);;
+            flex-wrap: wrap;
+            gap: 1em;
+
+            p {
+                flex-basis: 100%;
+                font-weight: 900;
+            }
+
+            img {
+                width: calc((((900px - 9em) / 3) - 3em) / 2);
+                border-radius: .3em;
+            }
+        }
+
+        .about {
+            flex-basis: 50%;
+
+            .title {
+                font-weight: 900;
+                font-size: 20px;
+            }
+
+            p:where:not(.title) {
+                font-size: 10px;
+                line-height: 2;
+                opacity: 50%;
+            }
+
+            p + p {
+                padding-top: 2em;
+                font-size: 10px;
+                line-height: 2;
+                opacity: 50%;
+            }
+        }
+
+        button {
+            padding: .5em 1em;
+            font-weight: 900;
+            background-color: #0090c5;
+            color: white;
+            border: none;
+            border-radius: .3em;
+            margin-block: 1em;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+    opacity: 50%;
+
+    .title {
+        font-weight: 900;
+        padding-block: 1em;
+    }
+
+    .stuff {
+
+        li {
+            display: block;
+
+            a {
+                color: black;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .contact {
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: .5em;
+
+            li {
+                display: block;
+                font-size: 10px;
+
+                .fa-brands {
+                    font-size: 3em;
+                }
+            }
+        }
+
+        address {
+            padding-top: 1em;
+
+            p {
+                font-size: 10px;
+                padding-block: .5em;
+            }
+        }
+    }
+}
+
+.right {
+    text-align: center;
+    font-size: 10px;
+    padding: 5em;
+}
